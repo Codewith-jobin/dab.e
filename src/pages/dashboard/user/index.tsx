@@ -2,8 +2,9 @@ import { Helmet } from 'react-helmet-async';
 
 import { CONFIG } from 'src/config-global';
 
-import { BlankView } from 'src/sections/blank/view';
-import { UserProfileView } from 'src/sections/dashboard/users/view';
+// import { BlankView } from 'src/sections/blank/view';
+
+// import { UserProfileView } from 'src/sections/dashboard/users/view';
 
 // ----------------------------------------------------------------------
 
@@ -16,7 +17,7 @@ export default function Page() {
         <title> {metadata.title}</title>
       </Helmet>
 
-      <UserProfileView />
+      {/* <UserProfileView /> */}
     </>
   );
 }

@@ -1,1 +1,1 @@
-// export * from './invoice-list-view.tsx'
+export * from './invoice-list-view'

@@ -1,20 +1,20 @@
-// import { Box, Card } from "@mui/material"
-// import { ProfileCover } from "../profile-cover"
+// import { Box, Card, Tabs, Tab } from "@mui/material";
+// import { ProfileCover } from "../profile-cover";
 
-// export const UserProfileView = () => {
-//   return(
+// export const UserProfileView = ({ user, _userAbout, tabs, TABS }) => {
+//   return (
 //     <Box>
 //       USER PROFILE VIEW
 
-//       <Card sx={{ mb: 3, height: 290 }}>
+//       <Card sx={{ mb: 3, height: 290, position: 'relative' }}>
 //         <ProfileCover
-//           // role={_userAbout.role}
+//           role={_userAbout.role}
 //           name={'ansaf'}
-//           // avatarUrl={user?.photoURL}
-//           // coverUrl={_userAbout.coverUrl}
+//           avatarUrl={user?.photoURL}
+//           coverUrl={_userAbout.coverUrl}
 //         />
 
-//         {/* <Box
+//         <Box
 //           display="flex"
 //           justifyContent={{ xs: 'center', md: 'flex-end' }}
 //           sx={{
@@ -31,8 +31,8 @@
 //               <Tab key={tab.value} value={tab.value} icon={tab.icon} label={tab.label} />
 //             ))}
 //           </Tabs>
-//         </Box> */}
+//         </Box>
 //       </Card>
 //     </Box>
-//   )
-// }
+//   );
+// };
