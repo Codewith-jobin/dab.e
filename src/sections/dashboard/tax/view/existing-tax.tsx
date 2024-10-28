@@ -35,7 +35,7 @@ const taxData = [
 
 export function Taxtable({ title = 'tax' }: Props) {
   const navigate=useNavigate();
-  const handleclickedit=(path:String)=>{
+  const handleclickedit=(path:string)=>{
     navigate(path)
   }
     
