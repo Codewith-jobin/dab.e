@@ -18,6 +18,7 @@ import Stack from '@mui/material/Stack';
 import { varAlpha } from 'src/theme/styles';
 
 import { DashboardContent } from 'src/layouts/dashboard';
+import { paths } from 'src/routes/paths';
 
 type Props = {
   title?: string;
@@ -32,12 +33,12 @@ const taxData = [
   { name: 'NVU', rate: 1.5, description: 'Tax on traveling', category: 'Local', lastUpdated: '2024-09-12' },
 ];
 
-export function Taxtable({ title = 'TAX' }: Props) {
+export function Taxtable({ title = 'tax' }: Props) {
   const navigate=useNavigate();
-  const handlecreateclick=()=>{
-    navigate('./create-tax.tsx')
-    
+  const handleclickedit=(path:String)=>{
+    navigate(path)
   }
+    
   return (
     <DashboardContent maxWidth="xl">
       <Typography variant="h6" gutterBottom>{title}</Typography> {/* Changed variant to h6 */}
@@ -74,11 +75,8 @@ export function Taxtable({ title = 'TAX' }: Props) {
                   <TableCell padding="normal">{tax.lastUpdated}</TableCell>
                   <TableCell>
                     <Stack direction="row" spacing={1}>
-                      <Button variant="outlined" color="primary" size="small">
+                      <Button variant="outlined" color="primary" size="small" onClick={()=>handleclickedit(paths.dashboard.tax.edit)}>
                         Edit
-                      </Button>
-                      <Button variant="contained" color='primary' size="small" onClick={handlecreateclick}>
-                        Create
                       </Button>
                       <Button variant="outlined" color="primary" size="small">
                         Delete
@@ -94,3 +92,4 @@ export function Taxtable({ title = 'TAX' }: Props) {
     </DashboardContent>
   );
 }
+

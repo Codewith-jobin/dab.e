@@ -77,6 +77,7 @@ export const dashboardRoutes = [
         { path: 'create-tax', element: <CreateTax/> },
         { path: 'existing-tax', element: <ExistingTax/> },
         { path: 'edit-tax', element: <EditTax/> },
+        
       ],
     },
     ],
