@@ -3,6 +3,10 @@
 // import { CONFIG } from 'src/config-global';
 
 // import { BlankView } from 'src/sections/blank/view';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 514dce4a27b655ee6b8bdbdd9884bc37a5ab3297
 // import { UserProfileView } from 'src/sections/dashboard/users/view';
 
 // // ----------------------------------------------------------------------
@@ -16,7 +20,14 @@
 //         <title> {metadata.title}</title>
 //       </Helmet>
 
+<<<<<<< HEAD
 //       <UserProfileView />
 //     </>
 //   );
 // }
+=======
+      {/* <UserProfileView /> */}
+    </>
+  );
+}
+>>>>>>> 514dce4a27b655ee6b8bdbdd9884bc37a5ab3297

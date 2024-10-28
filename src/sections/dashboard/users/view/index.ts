@@ -1,1 +1,1 @@
-// export * from './user-profile-view.tsx'
+// export * from './user-profile-view'
