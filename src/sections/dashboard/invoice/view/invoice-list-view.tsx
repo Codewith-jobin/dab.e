@@ -1,12 +1,13 @@
-// import { Box } from "@mui/material"
-// import { InvoiceStatusCards } from "../invoice-status-cards"
+import { Box } from "@mui/material"
 
-// export const InvoiceListView = () => {
-//   return(
-//     <Box sx={{px: 5}}>
-//       INVOICE LIST VIEW PARENT
+import { InvoiceStatusCards } from "../invoice-status-cards"
 
-//       <InvoiceStatusCards />
-//     </Box>
-//   )
-// }
+export function InvoiceListView () {
+  return(
+    <Box sx={{px: 5}}>
+      INVOICE LIST VIEW PARENT
+
+      <InvoiceStatusCards />
+    </Box>
+  )
+}

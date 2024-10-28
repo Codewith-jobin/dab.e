@@ -46,8 +46,8 @@ export const navData = [
    * Overview
    */
   {
-    subheader: 'Version 1.0',
-    items: [{ title: 'Overview', path: paths.dashboard.root, icon: ICONS.dashboard }],
+    subheader: 'Overview',
+    items: [{ title: 'App', path: paths.dashboard.root, icon: ICONS.dashboard }],
   },
   /**
    * Management
@@ -84,6 +84,16 @@ export const navData = [
           { title: 'List', path: paths.dashboard.invoice.root },
           { title: 'Create', path: paths.dashboard.invoice.create },
           { title: 'Edit', path: paths.dashboard.invoice.edit },
+        ],
+      },
+      {
+        title: 'tax',
+        path: paths.dashboard.tax.root,
+        icon: ICONS.invoice,
+        children: [
+          { title: 'Taxlist', path: paths.dashboard.tax.root },
+          { title: 'TaxCreate', path: paths.dashboard.tax.create },
+          { title: 'TaxEdit', path: paths.dashboard.tax.edit },
         ],
       },
     ],

@@ -59,6 +59,11 @@ export const paths = {
       root: `${ROOTS.DASHBOARD}/invoice`,
       create: `${ROOTS.DASHBOARD}/invoice/create`,
       edit: `${ROOTS.DASHBOARD}/invoice/edit`,
+    },
+    tax: {
+      root: `${ROOTS.DASHBOARD}/tax/existing-tax`,
+      create: `${ROOTS.DASHBOARD}/tax/create-tax`,
+      edit: `${ROOTS.DASHBOARD}/tax/edit-tax`,
     }
   },
 };
